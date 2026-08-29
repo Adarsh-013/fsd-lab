@@ -1,0 +1,140 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5efe6;
+    color: #3e2723;
+}
+
+/* Header */
+header {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    color: #d7ccc8;
+}
+
+/* Class Selector */
+.form-container {
+    width: 60%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #c8bdb5;
+}
+
+/* Element inside Class */
+.form-container h2 {
+    text-align: center;
+    color: #5d4037;
+}
+
+/* Pseudo-element */
+.form-container h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #8d6e63;
+    margin: 10px auto 25px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Attribute Selector */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #bca9a3;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Pseudo-class */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #6d4c41;
+    outline: none;
+    background-color: #fffaf5;
+}
+
+/* Pseudo-element */
+label::after {
+    content: " *";
+    color: #b71c1c;
+}
+
+/* Radio and Checkbox */
+.options {
+    margin-top: 10px;
+}
+
+.options label::after {
+    content: "";
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 13px;
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* Pseudo-class :hover */
+input[type="submit"]:hover {
+    background-color: #4e342e;
+}
+
+/* Pseudo-class :active */
+input[type="submit"]:active {
+    background-color: #3e2723;
+}
+
+/* ID Selector */
+#message {
+    height: 100px;
+    resize: none;
+}
+
+/* Footer */
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
