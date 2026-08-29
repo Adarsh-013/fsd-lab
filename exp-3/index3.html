@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urban Brew - Order Calculator</title>
+</head>
+
+<body bgcolor="#F5EFE6">
+
+    <!-- Header -->
+    <table width="100%" bgcolor="#3E2723" cellpadding="20">
+        <tr>
+            <td align="center">
+                <font color="white" size="6">
+                    <b>☕ URBAN BREW</b>
+                </font>
+
+                <br>
+
+                <font color="#D7CCC8" size="3">
+                    JavaScript Order Calculator
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Main Section -->
+    <table width="80%" align="center" cellpadding="15">
+        <tr>
+
+            <td align="center">
+                <font color="#4E342E" size="5">
+                    <b>COFFEE ORDER SYSTEM</b>
+                </font>
+
+                <p>
+                    Enter your name and select a coffee to calculate
+                    your order amount.
+                </p>
+            </td>
+
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Customer Details -->
+    <table width="70%" align="center" cellpadding="10">
+
+        <tr>
+            <td>
+                <b>Customer Name:</b>
+            </td>
+
+            <td>
+                <input type="text" id="customerName"
+                       placeholder="Enter your name">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>Select Coffee:</b>
+            </td>
+
+            <td>
+                <select id="coffee">
+                    <option value="Espresso">Espresso</option>
+                    <option value="Cappuccino">Cappuccino</option>
+                    <option value="Cafe Latte">Cafe Latte</option>
+                    <option value="Cold Coffee">Cold Coffee</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>Quantity:</b>
+            </td>
+
+            <td>
+                <input type="number" id="quantity"
+                       value="1" min="1">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <button onclick="calculateOrder()">
+                    CALCULATE ORDER
+                </button>
+            </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <hr width="80%">
+
+    <!-- Output -->
+    <table width="70%" align="center" cellpadding="15">
+        <tr>
+            <td align="center">
+
+                <font color="#4E342E" size="4">
+                    <b>ORDER SUMMARY</b>
+                </font>
+
+                <p id="result">
+                    Your order details will appear here.
+                </p>
+
+            </td>
+        </tr>
+    </table>
+
+    <hr width="80%">
+
+    <!-- JavaScript Concepts -->
+    <table width="80%" align="center" cellpadding="15">
+
+        <tr>
+            <td align="center">
+                <font color="#4E342E" size="4">
+                    <b>AVAILABLE COFFEE MENU</b>
+                </font>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <p id="menu"></p>
+            </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <!-- Footer -->
+    <table width="100%" bgcolor="#3E2723" cellpadding="15">
+        <tr>
+            <td align="center">
+                <font color="white">
+                    <b>URBAN BREW</b>
+                    <br>
+                    Powered by JavaScript
+                    <br><br>
+                    © 2026 Urban Brew Cafe
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <!-- External JavaScript -->
+    <script src="script3.js"></script>
+
+</body>
+</html>
