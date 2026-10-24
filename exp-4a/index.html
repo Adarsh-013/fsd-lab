@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Brew | Coffee Order System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="brand-icon">☕</div>
+        <div>
+            <h1>URBAN BREW</h1>
+            <p>Fresh Coffee. Fresh Ideas.</p>
+        </div>
+    </header>
+
+    <main class="page-layout">
+
+        <!-- Introduction and Menu -->
+        <section class="intro-panel">
+            <p class="eyebrow">THE URBAN BREW EXPERIENCE</p>
+
+            <h2>Your coffee,<br>your way.</h2>
+
+            <p>
+                Choose your favourite brew, enter your details,
+                and preview your order with our interactive
+                JavaScript order system.
+            </p>
+
+            <hr>
+
+            <h3>OUR COFFEE MENU</h3>
+
+            <ul class="menu-list">
+                <li><span>Espresso</span><strong>₹120</strong></li>
+                <li><span>Cappuccino</span><strong>₹160</strong></li>
+                <li><span>Cafe Latte</span><strong>₹170</strong></li>
+                <li><span>Cold Coffee</span><strong>₹180</strong></li>
+            </ul>
+
+            <p class="menu-note">
+                Every cup is prepared with quality ingredients
+                and a passion for great coffee.
+            </p>
+        </section>
+
+        <!-- Order Form -->
+        <section class="form-card">
+
+            <div class="form-heading">
+                <p class="eyebrow">CUSTOMER ORDER DESK</p>
+                <h2>Place Your Order</h2>
+                <p>Fill in the details marked with an asterisk (*).</p>
+            </div>
+
+            <form id="orderForm" novalidate>
+
+                <div class="form-grid">
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="customerName">Full Name *</label>
+
+                        <input
+                            type="text"
+                            id="customerName"
+                            name="customerName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            maxlength="60"
+                            required>
+
+                        <small class="field-error"
+                               id="customerNameError"></small>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="name@example.com"
+                            autocomplete="email"
+                            required>
+
+                        <small class="field-error"
+                               id="emailError"></small>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="10-digit mobile number"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            required>
+
+                        <small class="field-error"
+                               id="phoneError"></small>
+                    </div>
+
+                    <!-- Coffee -->
+                    <div class="form-group">
+                        <label for="coffee">Select Coffee *</label>
+
+                        <select id="coffee" name="coffee" required>
+                            <option value="" selected disabled>
+                                Choose your coffee
+                            </option>
+
+                            <option value="espresso">Espresso</option>
+                            <option value="cappuccino">Cappuccino</option>
+                            <option value="latte">Cafe Latte</option>
+                            <option value="coldCoffee">Cold Coffee</option>
+                        </select>
+
+                        <small class="field-error"
+                               id="coffeeError"></small>
+                    </div>
+
+                    <!-- Quantity -->
+                    <div class="form-group">
+                        <label for="quantity">Quantity *</label>
+
+                        <input
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            min="1"
+                            max="10"
+                            step="1"
+                            value="1"
+                            required>
+
+                        <small class="field-error"
+                               id="quantityError"></small>
+                    </div>
+
+                    <!-- Order Type -->
+                    <div class="form-group">
+                        <label for="orderType">Order Type *</label>
+
+                        <select id="orderType" name="orderType" required>
+                            <option value="pickup">Takeaway</option>
+                            <option value="dine-in">Dine In</option>
+                        </select>
+
+                        <small class="field-error"
+                               id="orderTypeError"></small>
+                    </div>
+
+                </div>
+
+                <!-- Price Estimate -->
+                <div class="total-strip">
+                    <span>Estimated Total</span>
+                    <strong id="estimate">Choose a coffee</strong>
+                </div>
+
+                <!-- Buttons -->
+                <div class="button-group">
+                    <button type="submit" class="submit-button">
+                        VALIDATE &amp; PREVIEW ORDER
+                    </button>
+
+                    <button type="reset" class="reset-button">
+                        CLEAR FORM
+                    </button>
+                </div>
+
+            </form>
+
+            <!-- Result and Error Messages -->
+            <div id="orderResult"
+                 class="result-panel"
+                 role="status"
+                 aria-live="polite">
+                Your validated order preview will appear here.
+            </div>
+
+            <p class="demo-note">
+                Demonstration only: orders are not sent to a server.
+            </p>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>URBAN BREW | Fresh Coffee. Fresh Ideas.</p>
+        <p>&copy; 2026 Urban Brew Cafe</p>
+    </footer>
+
+</body>
+</html>
