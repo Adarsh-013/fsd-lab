@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Brew | Membership</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>☕ URBAN BREW</h1>
+        <p>Good Coffee. Great Community.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <section class="intro">
+            <p class="eyebrow">JOIN THE COMMUNITY</p>
+            <h2>Your Coffee Journey Starts Here.</h2>
+
+            <p>
+                Become a member of Urban Brew to explore your favourite
+                coffees and discover new flavours.
+            </p>
+
+            <ul>
+                <li>Discover your favourite coffee</li>
+                <li>Stay connected with our cafe</li>
+                <li>Be part of the Urban Brew community</li>
+            </ul>
+        </section>
+
+        <!-- Registration Form -->
+        <section class="form-card">
+
+            <h2>Membership Registration</h2>
+            <p class="subtitle">Enter your details to get started.</p>
+
+            <form id="membershipForm" novalidate>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        maxlength="60">
+
+                    <small class="error" id="fullNameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="name@example.com">
+
+                    <small class="error" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Mobile Number *</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter 10-digit mobile number"
+                        maxlength="10"
+                        inputmode="numeric">
+
+                    <small class="error" id="phoneError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="coffee">Favourite Coffee *</label>
+
+                    <select id="coffee">
+                        <option value="">Select your favourite</option>
+                        <option value="Espresso">Espresso</option>
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Cafe Latte">Cafe Latte</option>
+                        <option value="Cold Coffee">Cold Coffee</option>
+                    </select>
+
+                    <small class="error" id="coffeeError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Create Password *</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Minimum 8 characters">
+
+                    <small class="hint">
+                        Use uppercase, lowercase and at least one number.
+                    </small>
+
+                    <small class="error" id="passwordError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password *</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Re-enter your password">
+
+                    <small class="error" id="confirmPasswordError"></small>
+                </div>
+
+                <div class="terms-group">
+                    <input type="checkbox" id="terms">
+
+                    <label for="terms">
+                        I agree to the terms and conditions.
+                    </label>
+                </div>
+
+                <small class="error" id="termsError"></small>
+
+                <button type="submit">VALIDATE &amp; REGISTER</button>
+                <button type="reset" class="reset-button">CLEAR FORM</button>
+
+            </form>
+
+            <!-- Validation Result -->
+            <div id="result" class="result" role="status" aria-live="polite">
+                Your registration status will appear here.
+            </div>
+
+            <p class="note">
+                Demonstration only. No account is created and no information
+                is transmitted to a server.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>URBAN BREW | Fresh Coffee. Fresh Ideas.</p>
+        <p>&copy; 2026 Urban Brew Cafe</p>
+    </footer>
+
+</body>
+</html>
