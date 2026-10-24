@@ -1,0 +1,375 @@
+/* Header */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    position: relative;
+    padding: 23px;
+    background: #3e2723;
+    color: white;
+}
+
+.brand-icon {
+    font-size: 40px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 27px;
+    letter-spacing: 3px;
+}
+
+.site-header p {
+    margin: 3px 0 0;
+    color: #d7ccc8;
+    font-size: 13px;
+}
+
+.experiment-tag {
+    position: absolute;
+    right: 5%;
+    padding: 6px 10px;
+    border: 1px solid #8d6e63;
+    border-radius: 4px;
+    color: #ead8c8;
+    font-size: 11px;
+}
+
+/* Page Layout */
+.page-container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 5px;
+}
+
+.section-label {
+    margin: 0 0 8px;
+    color: #95664b;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.welcome-section h2 {
+    margin: 0;
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.welcome-section p:not(.section-label) {
+    max-width: 560px;
+    color: #786862;
+}
+
+.welcome-badge {
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #e6d8cb;
+    border-radius: 12px;
+    background: #fffaf5;
+}
+
+.welcome-badge span {
+    font-size: 28px;
+}
+
+.welcome-badge strong {
+    font-size: 28px;
+}
+
+.welcome-badge small {
+    color: #786862;
+}
+
+/* Counter */
+.counter-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 24px;
+    margin: 15px 0 25px;
+    border-radius: 10px;
+    background: #4e342e;
+    color: #fffaf5;
+}
+
+.counter-card .section-label {
+    color: #d7b69b;
+}
+
+.counter-card h3 {
+    margin: 0;
+}
+
+.counter-card .muted-text {
+    margin: 4px 0 0;
+    color: #e0d2c8;
+    font-size: 13px;
+}
+
+.counter-controls {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.counter-button {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #b99b88;
+    border-radius: 7px;
+    background: transparent;
+    color: white;
+    font-size: 22px;
+}
+
+.counter-button:hover {
+    background: #6d4c41;
+}
+
+.counter-value {
+    min-width: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Main Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.form-card,
+.list-card {
+    min-width: 0;
+    padding: 26px;
+    border: 1px solid #e6d8cb;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(62, 39, 35, 0.05);
+}
+
+.form-card h2,
+.list-card h2 {
+    margin: 4px 0 10px;
+    font-size: 23px;
+}
+
+.muted-text {
+    color: #786862;
+    font-size: 13px;
+}
+
+/* Form */
+.form-group {
+    margin: 20px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d5c5bb;
+    border-radius: 6px;
+    background: #fffdfb;
+    color: #3e2723;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #6d4c41;
+}
+
+.primary-button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #6d4c41;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.primary-button:hover {
+    background: #4e342e;
+}
+
+.form-error {
+    color: #b3261e;
+    font-size: 13px;
+}
+
+/* Student List */
+.list-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.member-count {
+    padding: 5px 9px;
+    border-radius: 20px;
+    background: #f5efe6;
+    color: #6d4c41;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.student-list {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.student-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 0;
+    border-bottom: 1px solid #eee4dc;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #eee0d4;
+    color: #5d4037;
+    font-weight: bold;
+}
+
+.student-details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.student-details strong {
+    overflow-wrap: anywhere;
+    font-size: 14px;
+}
+
+.student-details span {
+    color: #786862;
+    font-size: 12px;
+}
+
+.remove-button {
+    padding: 6px 9px;
+    border: 1px solid #e3c8bf;
+    border-radius: 5px;
+    background: white;
+    color: #9c3b2f;
+    font-size: 11px;
+}
+
+.remove-button:hover {
+    background: #fff1ed;
+}
+
+.empty-state {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 7px;
+    background: #f8f5f1;
+    color: #786862;
+    font-size: 13px;
+}
+
+/* Footer */
+.site-footer {
+    padding: 20px;
+    background: #3e2723;
+    color: #e0d2c8;
+    text-align: center;
+    font-size: 12px;
+}
+
+.site-footer p {
+    margin: 4px 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 800px) {
+    .page-container {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-section h2 {
+        font-size: 32px;
+    }
+
+    .experiment-tag {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 22px;
+    }
+
+    .welcome-section {
+        align-items: flex-start;
+    }
+
+    .welcome-section h2 {
+        font-size: 29px;
+    }
+
+    .welcome-badge {
+        min-width: 95px;
+        padding: 12px;
+    }
+
+    .counter-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .form-card,
+    .list-card {
+        padding: 20px;
+    }
+
+    .student-item {
+        gap: 8px;
+    }
+}
